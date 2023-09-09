@@ -5,9 +5,9 @@ module.exports = app => {
 
     router.post("/", item.create);
 
-    router.get("/", item.findALL);
+    router.get("/", item.findAll);
 
-    router.get("/Flammabless", item.findALLFlammabes);
+    router.get("/Flammabless", item.findAllFlammabes);
 
     router.get("/:id", item.findOne);
 
@@ -15,7 +15,7 @@ module.exports = app => {
 
     router.delete("/:id", item.delete);
 
-    router.delete("/", item.deleteALL);
+    router.delete("/", item.deleteAll);
 
     app.use('/api/items', router);
     
