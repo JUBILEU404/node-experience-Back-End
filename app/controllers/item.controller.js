@@ -123,7 +123,7 @@ Item.destroy({
 });
 };
 
-exports.findAllFlammabes = (req,res) => {
+exports.findAllFlammables = (req,res) => {
 Item.findAll({ where: {isFlammable: true }})
 .then(data => {
     res.send(data);
